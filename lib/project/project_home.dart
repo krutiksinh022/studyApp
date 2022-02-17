@@ -121,52 +121,6 @@ class _projectHomeState extends State<projectHome> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => programinProject()));
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: NetworkImage(
-                              "https://miro.medium.com/max/800/1*wcEYa9AjnMZxXAau2iuhYw.png"))),
-                  child: Column(
-                    children: [
-                      Center(
-                        child: Image.network(
-                          "https://miro.medium.com/max/800/1*wcEYa9AjnMZxXAau2iuhYw.png",
-                          height: 150,
-                          width: 300,
-                          // width: 1000,
-                        ),
-                      ),
-                      Container(
-                        height: 30,
-                        width: 300,
-                        decoration: BoxDecoration(
-                          color: Colors.purple,
-                          //borderRadius: BorderRadius.circular(30)
-                        ),
-                        child: Center(
-                            child: Text(
-                          "Programing Languages",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20),
-                        )),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 8, left: 60, right: 60),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
                           builder: (context) => webdevProjects()));
                 },
                 child: Container(

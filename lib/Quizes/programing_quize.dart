@@ -24,6 +24,7 @@ class _ProgramingquizeState extends State<Programingquize> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Programing Languges"),
+        backgroundColor: Colors.purple,
       ),
       body: SingleChildScrollView(
         child: Stack(

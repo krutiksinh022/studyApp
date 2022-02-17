@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:study_app/College/app_devlopment/android_dev.dart';
 import 'package:study_app/College/app_devlopment/flutter_dev.dart';
 import 'package:study_app/College/app_devlopment/ios_dev.dart';
+import 'package:study_app/College/app_devlopment/rect_native.dart';
 
 class AppDevlopmentHome extends StatefulWidget {
   const AppDevlopmentHome({Key? key}) : super(key: key);
@@ -117,33 +118,25 @@ class _AppDevlopmentHomeState extends State<AppDevlopmentHome> {
                     Padding(
                       padding:
                           const EdgeInsets.only(top: 15.0, right: 10, left: 10),
-                      child: Container(
-                        height: 50,
-                        decoration: BoxDecoration(color: Colors.blueAccent),
-                        child: Center(
-                            child: Text(
-                          "Desktop App Devlopment",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20),
-                        )),
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsets.only(top: 15.0, right: 10, left: 10),
-                      child: Container(
-                        height: 50,
-                        decoration: BoxDecoration(color: Colors.blueAccent),
-                        child: Center(
-                            child: Text(
-                          "React Native",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20),
-                        )),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Reactnativehome()));
+                        },
+                        child: Container(
+                          height: 50,
+                          decoration: BoxDecoration(color: Colors.blueAccent),
+                          child: Center(
+                              child: Text(
+                            "React Native",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20),
+                          )),
+                        ),
                       ),
                     ),
                   ],
